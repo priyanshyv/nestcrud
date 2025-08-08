@@ -3,7 +3,8 @@ import { Module, OnApplicationBootstrap } from '@nestjs/common';
 // import { TypeOrmModule } from '@nestjs/typeorm';
 // import { Connection } from 'typeorm';
 //import { BookModule } from './book/book.module';
-import { HeroModule } from './hero/hero.module';
+// import { HeroModule } from './hero/hero.module';
+import { PipeModule } from './pipewala/pipewala.module';
 
 @Module({
   imports: [
@@ -18,7 +19,8 @@ import { HeroModule } from './hero/hero.module';
     //   synchronize: true,
     //   logging: true, 
     // }),BookModule
-    HeroModule
+    //HeroModule
+    PipeModule
     // ... other
   ],
 })
