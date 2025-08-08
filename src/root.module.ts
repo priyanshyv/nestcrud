@@ -5,6 +5,7 @@ import { Module, OnApplicationBootstrap } from '@nestjs/common';
 //import { BookModule } from './book/book.module';
 // import { HeroModule } from './hero/hero.module';
 import { PipeModule } from './pipewala/pipewala.module';
+import { ExceptionWalaModule } from './exceptionwala/exceptionwala.module';
 
 @Module({
   imports: [
@@ -20,7 +21,8 @@ import { PipeModule } from './pipewala/pipewala.module';
     //   logging: true, 
     // }),BookModule
     //HeroModule
-    PipeModule
+    //PipeModule
+    ExceptionWalaModule
     // ... other
   ],
 })
