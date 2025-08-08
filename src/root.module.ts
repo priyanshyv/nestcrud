@@ -7,6 +7,7 @@ import { Module, OnApplicationBootstrap } from '@nestjs/common';
 import { PipeModule } from './pipewala/pipewala.module';
 import { ExceptionWalaModule } from './exceptionwala/exceptionwala.module';
 import { GuardwalaModule } from './gaurdwala/guardwala.module';
+import { InterceptorswalaModule } from './interceptorswala/interceptorswala.module';
 
 @Module({
   imports: [
@@ -24,7 +25,8 @@ import { GuardwalaModule } from './gaurdwala/guardwala.module';
     //HeroModule
     //PipeModule
     //ExceptionWalaModule
-    GuardwalaModule
+    //GuardwalaModule
+    InterceptorswalaModule
     // ... other
   ],
 })
