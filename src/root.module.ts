@@ -6,6 +6,7 @@ import { Module, OnApplicationBootstrap } from '@nestjs/common';
 // import { HeroModule } from './hero/hero.module';
 import { PipeModule } from './pipewala/pipewala.module';
 import { ExceptionWalaModule } from './exceptionwala/exceptionwala.module';
+import { GuardwalaModule } from './gaurdwala/guardwala.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { ExceptionWalaModule } from './exceptionwala/exceptionwala.module';
     // }),BookModule
     //HeroModule
     //PipeModule
-    ExceptionWalaModule
+    //ExceptionWalaModule
+    GuardwalaModule
     // ... other
   ],
 })

@@ -18,6 +18,8 @@ function globalMiddlewareTwo(req:Request, res:Response, next:NextFunction){
 async function bootstrap() {
   //yei jo nestFeactory hai isney saari abstraction hide kardi hai
   const app = await NestFactory.create(RootModule);
+  //if we want to apply gurad global guard
+  //app.useGlobalGuards(new GuardWalaGurad())
   app.use(globalMiddlewareOne,globalMiddlewareTwo);
   await app.listen(process.env.PORT ?? 3000);
 }
