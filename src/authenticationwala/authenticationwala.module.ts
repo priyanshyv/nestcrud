@@ -1,8 +1,19 @@
 import { Module } from "@nestjs/common";
 import { AuthenticationwalaService } from "./authenticationwala.service";
+import { JwtModule } from "@nestjs/jwt";
+import { PassportModule } from "@nestjs/passport";
 
 @Module({
-    imports:[],
+    imports:[
+        PassportModule,
+        JwtModule.register({
+            secret:"Something",
+            signOptions:{
+                expiresIn:"60s"
+            }
+
+        })
+    ],
     controllers:[],
     //or yaha toh hamm isliye likhte hai coz we want to link the service with it
     providers:[AuthenticationwalaService],
